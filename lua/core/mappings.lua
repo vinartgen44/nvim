@@ -11,10 +11,16 @@ vim.keymap.set('n', '<leader>w', ':w<CR>')
 vim.keymap.set('n', '<leader>Q', ':q<CR>')
 
 -- Navigation
-vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
-vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
-vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
-vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-w>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-s>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-d>', ':wincmd l<CR>')
+vim.keymap.set('n', '<c-a>', ':wincmd h<CR>')
+
+
+vim.keymap.set('n', '<A-w>', 'k')
+vim.keymap.set('n', '<A-s>', 'j')
+vim.keymap.set('n', '<A-d>', 'l')
+vim.keymap.set('n', '<A-a>', 'h')
 
 -- Splits
 vim.keymap.set('n', '|', ':vsplit<CR>')
